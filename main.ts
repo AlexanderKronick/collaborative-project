@@ -23,6 +23,8 @@ let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 scene.setBackgroundColor(2)
-info.setScore(0)
-info.startCountdown(300)
-info.setLife(3)
+forever(function () {
+    info.setScore(0)
+    info.startCountdown(300)
+    info.setLife(3)
+})
